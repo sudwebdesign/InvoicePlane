@@ -1,3 +1,29 @@
+
+![InvoicePlane francisé](https://web.archive.org/web/20181209043322/http://invoiceplane.com/content/logo/PNG/logo_300x150.png)
+
+### InvoicePlane en Français pour PHP 7.3+
+
+ajout de quelques retouches pour facilité l'interopérabilités entre les appareils (device friendly)
+InvoicePlane est une application internet (webapp) libre de gestion de devis, factures, clients et paiements (en lignes).
+Son interface est simple de l'installation a l'utilisation, intuitive et s'adaptate au naviguateurs des mobiles.
+
+Pour plus d'info (en anglais et archivé) [InvoicePlane.com](https://web.archive.org/web/20190512232851/https://invoiceplane.com/)
+<del>
+ démonstration [anglais maybe in french?](https://demo.invoiceplane.com)
+</del>
+### Installation facile et en Français sur un son serveur local ou sur la toile
+
+1. Télécharger la [derniére version](http://sudwebdesign.free.fr/depot.php?script=InvoicePlane&download)
+2. Extraire le paquet et transferer tout le contenu sur votre serveur internet, pensez au fichier .htaccess il peut être caché sous GNULinux
+3. Ouvrir `http://my.host/invoiceflamefolder/setup` et suivre les instructions.
+
+![InvoicePlane](https://web.archive.org/web/20181209043322/http://invoiceplane.com/content/logo/PNG/logo_300x150.png)
+
+#### _Version 1.5.10.3-Fr
+
+InvoicePlane is a self-hosted open source application for managing your invoices, clients and payments.
+For more information visit <del> __[InvoicePlane.com](https://invoiceplane.com)__ or take a look at the __[demo](https://demo.invoiceplane.com)__ </del>
+
 <p align="center">
   <img src="https://web.archive.org/web/20181209043322/http://invoiceplane.com/content/logo/PNG/logo_300x150.png">
 </p>
