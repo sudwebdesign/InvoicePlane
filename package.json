@@ -1,8 +1,7 @@
 {
   "name": "invoiceplane",
-  "version": "1.5.9",
+  "version": "1.5.10",
   "description": "InvoicePlane is a self-hosted open source application for managing your invoices, clients and payments",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/InvoicePlane/InvoicePlane.git"
@@ -27,16 +26,18 @@
     "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-postcss": "^0.9.0",
-    "grunt-sass": "^3.1.0",
-    "node-sass": "^4.13.0",
+    "grunt-sass": "^2.1.0",
     "html5shiv": "^3.7.3",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
     "js-cookie": "^2.2.1",
     "load-grunt-tasks": "^5.1.0",
-    "postcss": "^7.0.24",
+    "node-sass": "^4.13.1",
+    "postcss": "^7.0.26",
     "select2": "^4.0.12",
     "zxcvbn": "^4.4.2"
   },
-  "dependencies": {}
+  "scripts": {
+    "build": "grunt build"
+  }
 }

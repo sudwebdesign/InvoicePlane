@@ -4,6 +4,9 @@
 
    All changes made in this file will override the default styles.
    ========================================================================== */
+.invoice img, .quote img {/* guest/view/invoice|quote/ */
+    float: right;
+}
 .navbar-inverse {
 background: #36393d;
 background: -moz-linear-gradient(45deg,  #36393d 0%, #000000 100%);

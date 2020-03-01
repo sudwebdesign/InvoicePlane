@@ -51,14 +51,13 @@
         <div class="invoice">
 
             <?php
-            $logo = invoice_logo();
-            if ($logo) {
+            if ($logo = invoice_logo()) {
                 echo $logo . '<br><br>';
             }
             ?>
 
             <div class="row">
-                <div class="col-xs-12 col-md-6 col-lg-5">
+                <div class="col-xs-12">
 
                     <h4><?php _htmlsc($invoice->user_name); ?></h4>
                     <p><?php if ($invoice->user_vat_id) {
@@ -88,7 +87,7 @@
                     </p>
 
                 </div>
-                <div class="col-lg-2"></div>
+                <div class="col-xs-12 col-md-6 col-lg-7"></div>
                 <div class="col-xs-12 col-md-6 col-lg-5 text-right">
 
                     <h4><?php _htmlsc(format_client($invoice)); ?></h4>
@@ -242,11 +241,16 @@
                     </table>
                 </div>
 
-                <?php if ($invoice->invoice_balance == 0) {
-                    echo '<img src="' . base_url('assets/core/img/paid.png') . '" class="paid-stamp">';
-                } ?>
-                <?php if ($is_overdue) {
-                    echo '<img src="' . base_url('assets/core/img/overdue.png') . '" class="overdue-stamp">';
+                <?php
+                $langLayer = '';#multilingual idea by !gh @sudwebdesign
+                if(file_exists('assets/core/img/language/'.get_setting('default_language').'/paid.png')){
+                    $langLayer = '/language/'.get_setting('default_language');
+                }
+                if ($invoice->invoice_balance == 0) {
+                    echo '<img src="' . base_url('assets/core/img'.$langLayer.'/paid.png') . '" class="paid-stamp">';
+                }
+                if ($is_overdue) {
+                    echo '<img src="' . base_url('assets/core/img'.$langLayer.'/overdue.png') . '" class="overdue-stamp">';
                 } ?>
 
             </div><!-- .invoice-items -->
