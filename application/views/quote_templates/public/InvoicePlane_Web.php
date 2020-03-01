@@ -65,7 +65,7 @@
             ?>
 
             <div class="row">
-                <div class="col-xs-12 col-md-6 col-lg-5">
+                <div class="col-xs-12">
 
                     <h4><?php _htmlsc($quote->user_name); ?></h4>
                     <p><?php if ($quote->user_vat_id) {
@@ -95,7 +95,7 @@
                     </p>
 
                 </div>
-                <div class="col-lg-2"></div>
+                <div class="col-xs-12 col-md-6 col-lg-7"></div>
                 <div class="col-xs-12 col-md-6 col-lg-5 text-right">
 
                     <h4><?php _htmlsc($quote->client_name); ?></h4>
