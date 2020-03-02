@@ -1,9 +1,7 @@
 <?php
 $pg = explode('index.php/',@$_SERVER['REQUEST_URI']);
-$pg = explode('/', $pg[1]);
-$pg = implode(' - ', $pg);
-?><title><?php echo (get_setting('custom_title', null, true) ?: 'InvoicePlane') . ' : ' . $pg;?></title>
-
+$pg = (isset($pg[1]))? ' : ' . implode(' - ', explode('/', $pg[1])): '';
+?><title><?php echo (get_setting('custom_title', null, true) ?: 'InvoicePlane') . $pg;?></title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1">
